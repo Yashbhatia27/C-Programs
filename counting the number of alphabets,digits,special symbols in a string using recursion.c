@@ -29,7 +29,7 @@
 }
 
 
-// C++ code
+// C++ code for biginers
 
 #include <iostream>
 #include <conio.h>
@@ -66,19 +66,6 @@ int main()
     getch();
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
