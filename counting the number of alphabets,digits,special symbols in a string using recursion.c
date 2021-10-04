@@ -27,3 +27,58 @@
  
     return 0;
 }
+
+
+// C++ code
+
+#include <iostream>
+#include <conio.h>
+#include <stdio.h>
+using namespace std;
+
+int main()
+{
+    char str[100];
+    int i;
+    int Alphabets=0,num=0,special=0,space=0;
+    cout<<"Please enter the string \n";
+    gets(str); 
+    for(i=0; str[i] != '\0'; i++){
+        //check for Aphabets
+            if((str[i]>='A' && str[i]<='Z') || (str[i]>='a' && str[i]<='z')) {  //check Alphabets
+                Alphabets++;
+    }else if(str[i]>='0' && str[i]<='9') {  //check numbers
+                num++;
+    }
+
+    else if(str[i]==' '){//ceck space
+                space++;
+    }
+    else{
+        special++;
+    }
+    }
+    cout<<"\nAlphabet letters: "<<Alphabets;
+
+    cout<<"\nnumbers: "<<num;
+      cout<<"\nSpace: "<<space;
+    cout<<"\nSpecial characters: "<<special;
+    getch();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
